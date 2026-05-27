@@ -17,13 +17,7 @@ Technical overview of the Pocketpull stack for developers, operators, and demo r
 
 ## Demo video
 
-Platform walkthrough (hosted on the org profile repo):
-
-<video src="https://github.com/Pocketpull/.github/raw/main/profile/assets/platform-walkthrough.mp4" width="720" controls>
-  <a href="https://github.com/Pocketpull/.github/raw/main/profile/assets/platform-walkthrough.mp4">Watch or download</a>
-</video>
-
-Also on [github.com/Pocketpull](https://github.com/Pocketpull) org homepage.
+**[▶ Platform walkthrough](https://github.com/Pocketpull/.github/blob/main/profile/assets/platform-walkthrough.mp4)** — also on the [org profile](https://github.com/Pocketpull) with preview image.
 
 ---
 
