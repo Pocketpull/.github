@@ -17,7 +17,8 @@ Digital pack opening and collector platform — web app, API, embedded Solana wa
 | ---- | ----- | ---- |
 | [**Frontend**](https://github.com/Pocketpull/Frontend) | Vite, React 19, TypeScript, Privy, Solana wallet-adapter | SPA on **Cloudflare Pages** |
 | [**Backend**](https://github.com/Pocketpull/Backend) | Node, Fastify, Drizzle, PostgreSQL | API on **Railway** |
-| [**Platform docs**](https://github.com/Pocketpull/Pocketpull) | Markdown | Architecture, env matrices, demo video |
+| [**Platform docs**](https://github.com/Pocketpull/Pocketpull) | Markdown | Full architecture, env matrices, demo video |
+| [**Org profile**](https://github.com/Pocketpull/.github) | Markdown | This page (shown on github.com/Pocketpull) |
 
 ---
 
