@@ -38,17 +38,15 @@
 
 ## Platform walkthrough
 
-<!-- Replace VIDEO_ID when your demo is published -->
-
 <div align="center">
 
-<a href="https://www.youtube.com/watch?v=VIDEO_ID">
-  <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" alt="Watch the Pocketpull platform walkthrough" width="720" />
-</a>
+<video src="https://github.com/Pocketpull/.github/raw/main/profile/assets/platform-walkthrough.mp4" width="720" controls>
+  <a href="https://github.com/Pocketpull/.github/raw/main/profile/assets/platform-walkthrough.mp4">Download platform walkthrough</a>
+</video>
 
-<br /><br />
+<br />
 
-**Coming soon** — local dev, Google sign-in, Privy wallet, staging vs production.
+Local dev · Google sign-in · Privy wallet · staging vs production
 
 </div>
 

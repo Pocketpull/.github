@@ -17,17 +17,13 @@ Technical overview of the Pocketpull stack for developers, operators, and demo r
 
 ## Demo video
 
-Replace `VIDEO_ID` and the link when your walkthrough is ready.
+Platform walkthrough (hosted on the org profile repo):
 
-[![Platform walkthrough](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+<video src="https://github.com/Pocketpull/.github/raw/main/profile/assets/platform-walkthrough.mp4" width="720" controls>
+  <a href="https://github.com/Pocketpull/.github/raw/main/profile/assets/platform-walkthrough.mp4">Watch or download</a>
+</video>
 
-Suggested topics for the video:
-
-1. Clone Frontend + Backend, local `.env` setup  
-2. Google sign-in and automatic Privy Solana wallet  
-3. Packs / gacha / vault / marketplace flow  
-4. Cloudflare Pages (Production vs Preview) + Railway staging  
-5. Where secrets live (never in the frontend bundle)
+Also on [github.com/Pocketpull](https://github.com/Pocketpull) org homepage.
 
 ---
 

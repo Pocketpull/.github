@@ -1,3 +1,5 @@
 .DS_Store
 Thumbs.db
 *.local.md
+# Keep source recordings local; repo ships compressed MP4 only
+profile/assets/*.mkv
