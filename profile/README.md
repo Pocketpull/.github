@@ -40,13 +40,13 @@
 
 <div align="center">
 
-<a href="https://github.com/Pocketpull/.github/blob/main/profile/assets/platform-walkthrough.mp4">
+<a href="https://raw.githubusercontent.com/Pocketpull/.github/main/profile/assets/platform-walkthrough.mp4">
   <img src="https://raw.githubusercontent.com/Pocketpull/.github/main/profile/assets/walkthrough-poster.jpg" alt="Watch the Pocketpull platform walkthrough" width="720" />
 </a>
 
 <br /><br />
 
-**[▶ Watch platform walkthrough](https://github.com/Pocketpull/.github/blob/main/profile/assets/platform-walkthrough.mp4)** — plays on GitHub
+**[▶ Watch platform walkthrough](https://raw.githubusercontent.com/Pocketpull/.github/main/profile/assets/platform-walkthrough.mp4)** — opens in your browser (~5 min)
 
 <br />
 
