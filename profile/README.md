@@ -1,28 +1,71 @@
-# Pocketpull
+<div align="center">
 
-Digital pack opening and collector platform — web app, API, embedded Solana wallets, and Collector Crypt gacha integration.
+[![Pocketpull banner](https://raw.githubusercontent.com/Pocketpull/.github/main/profile/assets/banner.svg)](https://pocketpull.io)
 
-<!-- Replace VIDEO_ID and link when your walkthrough is published -->
-### Platform walkthrough
+<br />
 
-[![Watch the Pocketpull platform walkthrough](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+<img src="https://raw.githubusercontent.com/Pocketpull/.github/main/profile/assets/logosymbol.png" alt="" width="88" height="88" />
+&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/Pocketpull/.github/main/profile/assets/logotext.png" alt="Pocketpull" width="220" />
 
-**Video:** [Add your demo URL here](https://www.youtube.com/watch?v=VIDEO_ID) — local dev, Google login, Privy wallet, staging vs production.
+<br /><br />
+
+**Open packs. Pull slabs. Vault your collection — on Solana.**
+
+<br />
+
+[![Website](https://img.shields.io/badge/website-pocketpull.io-2f7cf6?style=for-the-badge)](https://pocketpull.io)
+[![App](https://img.shields.io/badge/app-frontend--9a5.pages.dev-0f172a?style=for-the-badge&logo=cloudflare&logoColor=f38020)](https://frontend-9a5.pages.dev)
+[![API](https://img.shields.io/badge/api-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://pocketpull-production.up.railway.app/health)
+
+<br />
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=111)](https://github.com/Pocketpull/Frontend)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/Pocketpull/Frontend)
+[![Vite](https://img.shields.io/badge/Vite-SPA-646CFF?style=flat-square&logo=vite&logoColor=white)](https://github.com/Pocketpull/Frontend)
+[![Fastify](https://img.shields.io/badge/Fastify-API-000000?style=flat-square&logo=fastify&logoColor=white)](https://github.com/Pocketpull/Backend)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Drizzle-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/Pocketpull/Backend)
+[![Solana](https://img.shields.io/badge/Solana-Privy%20wallets-9945FF?style=flat-square&logo=solana&logoColor=white)](https://github.com/Pocketpull/Backend)
+[![Cloudflare](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://github.com/Pocketpull/Frontend)
+
+<br />
+
+[Live app](https://pocketpull.io) · [Frontend](https://github.com/Pocketpull/Frontend) · [Backend](https://github.com/Pocketpull/Backend) · [Platform docs](https://github.com/Pocketpull/Pocketpull)
+
+</div>
+
+---
+
+## Platform walkthrough
+
+<!-- Replace VIDEO_ID when your demo is published -->
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=VIDEO_ID">
+  <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" alt="Watch the Pocketpull platform walkthrough" width="720" />
+</a>
+
+<br /><br />
+
+**Coming soon** — local dev, Google sign-in, Privy wallet, staging vs production.
+
+</div>
 
 ---
 
 ## Repositories
 
-| Repo | Stack | Role |
-| ---- | ----- | ---- |
-| [**Frontend**](https://github.com/Pocketpull/Frontend) | Vite, React 19, TypeScript, Privy, Solana wallet-adapter | SPA on **Cloudflare Pages** |
-| [**Backend**](https://github.com/Pocketpull/Backend) | Node, Fastify, Drizzle, PostgreSQL | API on **Railway** |
-| [**Platform docs**](https://github.com/Pocketpull/Pocketpull) | Markdown | Full architecture, env matrices, demo video |
-| [**Org profile**](https://github.com/Pocketpull/.github) | Markdown | This page (shown on github.com/Pocketpull) |
+| | Repository | Stack | Deploy |
+| :---: | --- | --- | --- |
+| 🖥️ | [**Frontend**](https://github.com/Pocketpull/Frontend) | Vite · React 19 · TypeScript · Privy | Cloudflare Pages |
+| ⚙️ | [**Backend**](https://github.com/Pocketpull/Backend) | Node · Fastify · Drizzle · Postgres | Railway |
+| 📘 | [**Pocketpull**](https://github.com/Pocketpull/Pocketpull) | Architecture & env matrices | Docs |
+| 🏠 | [**`.github`**](https://github.com/Pocketpull/.github) | Org profile (this page) | — |
 
 ---
 
-## How it fits together
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -36,9 +79,9 @@ flowchart LR
     API[Fastify API]
     DB[(Postgres)]
   end
-  subgraph external [External]
+  subgraph external [Integrations]
     Google[Google OAuth]
-    Privy[Privy embedded wallets]
+    Privy[Privy wallets]
     CC[Collector Crypt]
     R2[Cloudflare R2]
   end
@@ -51,61 +94,85 @@ flowchart LR
   API --> R2
 ```
 
-1. User opens the **frontend** (production or staging URL).
-2. **Sign in with Google** → API OAuth → redirect back with `#pp_token=`.
-3. API provisions a **Privy embedded Solana wallet** and saves it to Postgres.
-4. All game/commerce features call the **API** with the Bearer token.
+| Step | What happens |
+| :--: | --- |
+| 1 | User opens the **SPA** (production, staging preview, or local). |
+| 2 | **Sign in with Google** → API OAuth → redirect with `#pp_token=`. |
+| 3 | API provisions a **Privy embedded Solana wallet** and persists it in Postgres. |
+| 4 | Packs, gacha, vault, marketplace, and rewards call the **API** with `Authorization: Bearer`. |
+
+<details>
+<summary><strong>Auth & wallets</strong></summary>
+
+<br />
+
+| | |
+| --- | --- |
+| **Login** | Google OAuth only *(Apple Sign-In planned)* |
+| **Session** | Bearer token after OAuth — required for Cloudflare Pages + Railway cross-origin |
+| **Wallet** | Privy server-side on sign-in; Phantom / Solflare optional |
+| **Not used** | Privy login modal, email / password |
+
+</details>
 
 ---
 
-## Live URLs
+## Environments
 
 | Environment | Frontend | API |
-| ----------- | -------- | --- |
-| **Production** | [frontend-9a5.pages.dev](https://frontend-9a5.pages.dev) · [pocketpull.io](https://pocketpull.io) | [pocketpull-production.up.railway.app](https://pocketpull-production.up.railway.app) |
+| --- | --- | --- |
+| **Production** | [pocketpull.io](https://pocketpull.io) · [frontend-9a5.pages.dev](https://frontend-9a5.pages.dev) | [pocketpull-production.up.railway.app](https://pocketpull-production.up.railway.app) |
 | **Staging** | Cloudflare Preview (`staging` branch) | [staging-pp-production.up.railway.app](https://staging-pp-production.up.railway.app) |
 | **Local** | `http://localhost:8008` | `http://localhost:8080` |
 
+<details>
+<summary><strong>Staging without duplicate repos</strong></summary>
+
+<br />
+
+- Git: `main` → production · `staging` → preview builds  
+- Railway: `pocketpull` + `Staging-pp` (separate Postgres)  
+- Cloudflare: **Production** vs **Preview** env vars (`VITE_API_URL` must match the API)  
+- Templates: `Frontend/.staging.env` · `Backend/.staging.env`
+
+</details>
+
 ---
 
-## Auth & wallets (summary)
+## Quick start
 
-- **Login:** Google OAuth only (Apple planned).
-- **Session:** Bearer token in SPA after OAuth callback (works cross-origin: Pages + Railway).
-- **Wallet:** Privy server-side provisioning on Google sign-in; optional Phantom/Solflare for power users.
-- **Not used for login:** Privy modal login, email/password.
+<details>
+<summary><strong>Clone & run locally</strong></summary>
 
----
-
-## Quick start (developers)
+<br />
 
 ```bash
 # Terminal 1 — API
 git clone https://github.com/Pocketpull/Backend.git
-cd Backend && cp .env.example .env   # fill Google, Privy, DATABASE_URL
+cd Backend && cp .env.example .env
 npm install && npm run db:migrate && npm run db:seed && npm run dev
 
 # Terminal 2 — Web
 git clone https://github.com/Pocketpull/Frontend.git
-cd Frontend && cp .env.example .env   # VITE_API_URL=http://localhost:8080
+cd Frontend && cp .env.example .env
 npm install && npm run dev
 # → http://localhost:8008
 ```
 
-Full detail: [Frontend README](https://github.com/Pocketpull/Frontend) · [Backend README](https://github.com/Pocketpull/Backend) · [Platform README](https://github.com/Pocketpull/Pocketpull/blob/main/README.md)
+Set `VITE_API_URL=http://localhost:8080` and backend `WEB_ORIGIN=http://localhost:8008`.
+
+Full guides: [Frontend README](https://github.com/Pocketpull/Frontend) · [Backend README](https://github.com/Pocketpull/Backend) · [Platform README](https://github.com/Pocketpull/Pocketpull/blob/main/README.md)
+
+</details>
 
 ---
 
-## Staging without duplicate code
+<div align="center">
 
-- Git branches: `main` (prod) · `staging` (preview).
-- Railway: `pocketpull` + `Staging-pp` (separate Postgres).
-- Cloudflare: **Production** vs **Preview** env vars (`VITE_API_URL` points at the matching API).
+<br />
 
-Templates: `Frontend/.staging.env` · `Backend/.staging.env`
+**Pocketpull** · built by [Obelisk Protocol](https://github.com/Pocketpull)
 
----
+<sub>Collector experience · embedded Solana · Collector Crypt gacha</sub>
 
-<p align="center">
-  <sub>Pocketpull · Obelisk Protocol</sub>
-</p>
+</div>
