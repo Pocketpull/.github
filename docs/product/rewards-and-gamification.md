@@ -7,8 +7,8 @@ Pocket Points (PP) drive long-term progression: earn from spend and activities, 
 | Document | Contents |
 | -------- | -------- |
 | [rewards.md](../reference/rewards.md) | Client earn rates, shop catalog, tier thresholds |
-| [docs/rewards-system-spec-and-tasks.md](../../docs/rewards-system-spec-and-tasks.md) | Spec vs code gaps, file paths, tasks |
-| [docs/onboarding-points-system.md](../../docs/onboarding-points-system.md) | Onboarding quest IDs and triggers |
+| [rewards-system-spec-and-tasks.md](rewards-system-spec-and-tasks.md) | Spec vs code gaps, file paths, tasks |
+| [onboarding-points-system.md](../operations/onboarding-points-system.md) | Onboarding quest IDs and triggers |
 
 ## Earn rules (summary)
 
@@ -73,7 +73,7 @@ Admin: `/admin/rewards/*` — economy, quests, store items, milestones, achievem
 
 ## Implementation gaps (engineering)
 
-From [rewards-system-spec-and-tasks.md](../../docs/rewards-system-spec-and-tasks.md):
+From [rewards-system-spec-and-tasks.md](rewards-system-spec-and-tasks.md):
 
 | Gap | Detail |
 | --- | ------ |

@@ -1,70 +1,75 @@
 # Source documents index
 
-Every markdown file in the monorepo and how it maps into [platform docs](../README.md).
+All documentation lives under `pocketpull-platform/docs/`. This file is the complete catalogue.
 
-## Platform docs (this tree)
+## Platform docs tree
 
 | Path | Role |
 | ---- | ---- |
-| [docs/README.md](../README.md) | Central index |
+| [README.md](../README.md) | Central index |
 | `getting-started/*` | Local dev, staging, env |
 | `architecture/*` | System, auth, API, routes |
-| `product/*` | Product summaries + Masterdoc pointers |
+| `product/*` | Product summaries + engineering specs |
 | `integrations/*` | Collector Crypt |
 | `operations/*` | Runbooks |
-| `changelog/*` | Shipped vs backlog |
+| `changelog/*` | Implementation logs |
+| `reference/*` | Masterdoc, rewards, badges, API notes |
 
-## Product bible
+## Reference (authoritative specs)
 
-| File | Lines | Use |
-| ---- | ----- | --- |
-| [Masterdoc.md](Masterdoc.md) | ~1,034 | Full V3 UX spec (§1–28 product; §29–30 partly outdated) |
-
-## Client & spec (repo root)
-
-| File | Use |
-| ---- | --- |
-| [rewards.md](rewards.md) | PP earn/spend numbers, shop, tiers |
+| File | Contents |
+| ---- | -------- |
+| [Masterdoc.md](Masterdoc.md) | Full V3 UX/product spec (~1,034 lines) |
+| [rewards.md](rewards.md) | PP earn/spend, shop, tiers |
 | [badges.md](badges.md) | 49-badge catalogue + UI rules |
-| [Client_notes_3.md](../../Client_notes_3.md) | Round-3 implementation log |
-| [marketplace_api_notes.md](../../marketplace_api_notes.md) | CC marketplace API discovery |
-| [marketplace_rollout_checklist.md](../../marketplace_rollout_checklist.md) | Marketplace rollout gates |
+| [marketplace-api-notes.md](marketplace-api-notes.md) | CC marketplace API discovery |
+| [marketplace-rollout-checklist.md](marketplace-rollout-checklist.md) | Marketplace rollout gates |
 
-## docs/ (monorepo)
+## Product engineering specs
 
-| File | Platform doc |
-| ---- | ------------- |
-| [staging.md](../../docs/staging.md) | → [getting-started/staging.md](../getting-started/staging.md) |
-| [rewards-system-spec-and-tasks.md](../../docs/rewards-system-spec-and-tasks.md) | → [product/rewards-and-gamification.md](../product/rewards-and-gamification.md) |
-| [onboarding-points-system.md](../../docs/onboarding-points-system.md) | → [operations/onboarding-quests.md](../operations/onboarding-quests.md) |
-| [ops-store-benefits-runbook.md](../../docs/ops-store-benefits-runbook.md) | → [operations/point-shop-runbook.md](../operations/point-shop-runbook.md) |
-| [binder-client-implementation-strategy.md](../../docs/binder-client-implementation-strategy.md) | → [product/binder-and-collections.md](../product/binder-and-collections.md) |
+| File | Contents |
+| ---- | -------- |
+| [rewards-system-spec-and-tasks.md](../product/rewards-system-spec-and-tasks.md) | Rewards spec vs code gaps |
+| [binder-implementation-strategy.md](../product/binder-implementation-strategy.md) | Binder / collection quests plan |
 
-## frontend/
+## Operations (full runbooks)
 
-| File | Use |
-| ---- | --- |
-| [frontend/README.md](../../frontend/README.md) | SPA deploy + env |
-| [frontend/docs/COLLECTOR_CRYPT_INTEGRATION_PLAN.md](../../frontend/docs/COLLECTOR_CRYPT_INTEGRATION_PLAN.md) | → [integrations/collector-crypt-gacha.md](../integrations/collector-crypt-gacha.md) |
-| [frontend/src/components/home/_archive/README.md](../../frontend/src/components/home/_archive/README.md) | Archived home components |
+| File | Summary doc |
+| ---- | ----------- |
+| [onboarding-points-system.md](../operations/onboarding-points-system.md) | [onboarding-quests.md](../operations/onboarding-quests.md) |
+| [store-benefits-runbook.md](../operations/store-benefits-runbook.md) | [point-shop-runbook.md](../operations/point-shop-runbook.md) |
 
-## backend/
+## Integrations (full plans)
 
-| File | Use |
-| ---- | --- |
-| [backend/README.md](../../backend/README.md) | API deploy + auth + gacha sync |
+| File | Summary doc |
+| ---- | ----------- |
+| [collector-crypt-integration-plan.md](../integrations/collector-crypt-integration-plan.md) | [collector-crypt-gacha.md](../integrations/collector-crypt-gacha.md) |
+
+## Changelog
+
+| File | Contents |
+| ---- | -------- |
+| [client-notes-round-3.md](../changelog/client-notes-round-3.md) | Round-3 product/engineering log |
+| [implementation-status.md](../changelog/implementation-status.md) | Shipped vs backlog summary |
+
+## Service READMEs
+
+| File | Contents |
+| ---- | -------- |
+| [frontend/README.md](../../../frontend/README.md) | SPA deploy + env |
+| [backend/README.md](../../../backend/README.md) | API deploy + auth |
 
 ## GitHub
 
 | Repo | Content |
 | ---- | ------- |
 | [Pocketpull/Pocketpull](https://github.com/Pocketpull/Pocketpull) | This docs tree |
-| [Pocketpull/.github](https://github.com/Pocketpull/.github) | Org profile README |
+| [Pocketpull/.github](https://github.com/Pocketpull/.github) | Org profile |
 
 ## Maintenance
 
-When adding a new root-level `.md` spec:
+When adding documentation:
 
-1. Add a row here  
-2. Link from the relevant platform doc section  
-3. If it supersedes Masterdoc content, note the section in [product-overview.md](../product/product-overview.md)
+1. Place it under the correct `docs/` subdirectory (not repo root).
+2. Add a row here and link from [README.md](../README.md).
+3. Update [implementation-status.md](../changelog/implementation-status.md) if it changes shipped/backlog status.

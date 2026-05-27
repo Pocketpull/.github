@@ -2,7 +2,7 @@
 
 Operations for Pocket Points redemptions, benefit consumption, and Collector Crypt partner fee injection.
 
-**Full runbook:** [docs/ops-store-benefits-runbook.md](../../docs/ops-store-benefits-runbook.md)
+**Full runbook:** [store-benefits-runbook.md](store-benefits-runbook.md)
 
 ## Tables
 
@@ -29,7 +29,7 @@ Same shape as `GET /me/store-benefits`.
 
 1. User: `POST /gamification/store/redeem`  
 2. PP deducted, `store_redemptions` inserted  
-3. Fulfillment at ship/buyback/marketplace time should decrement `remaining_uses` — **verify** per benefit kind (known gap in [rewards-system-spec](../../docs/rewards-system-spec-and-tasks.md))
+3. Fulfillment at ship/buyback/marketplace time should decrement `remaining_uses` — **verify** per benefit kind (known gap in [rewards-system-spec](../product/rewards-system-spec-and-tasks.md))
 
 ## CC integration env
 

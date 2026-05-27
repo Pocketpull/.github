@@ -4,11 +4,11 @@ Marketplace uses a **different base URL** than gacha in many setups (`COLLECTORC
 
 ## Discovery notes
 
-**[marketplace_api_notes.md](../../marketplace_api_notes.md)** — staging hosts, `/marketplace` feed, `/v2` RPC methods, filter params (2026-04-09).
+**[marketplace-api-notes.md](../reference/marketplace-api-notes.md)** — staging hosts, `/marketplace` feed, `/v2` RPC methods, filter params (2026-04-09).
 
 ## Rollout checklist
 
-**[marketplace_rollout_checklist.md](../../marketplace_rollout_checklist.md)** — health, list/buy smoke tests, metrics, gates.
+**[marketplace-rollout-checklist.md](../reference/marketplace-rollout-checklist.md)** — health, list/buy smoke tests, metrics, gates.
 
 ## API routes
 

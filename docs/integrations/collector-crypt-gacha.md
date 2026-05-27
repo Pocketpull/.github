@@ -4,7 +4,7 @@ All CC credentials stay **server-side**. The SPA calls Pocketpull API routes tha
 
 ## Blueprint
 
-**[frontend/docs/COLLECTOR_CRYPT_INTEGRATION_PLAN.md](../../frontend/docs/COLLECTOR_CRYPT_INTEGRATION_PLAN.md)** — proxy architecture, endpoint mapping, wallet/sign flows, security constraints.
+**[collector-crypt-integration-plan.md](collector-crypt-integration-plan.md)** — proxy architecture, endpoint mapping, wallet/sign flows, security constraints.
 
 ## Slab pool (`GET /gacha/machines/:id/pool`)
 

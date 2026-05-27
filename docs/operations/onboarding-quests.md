@@ -2,7 +2,7 @@
 
 One-time (`timeframe: permanent`) quests that advance from real product events. Users **claim** PP the same way as daily/weekly/monthly quests.
 
-**Full reference:** [docs/onboarding-points-system.md](../../docs/onboarding-points-system.md)
+**Full reference:** [onboarding-points-system.md](onboarding-points-system.md)
 
 ## Quest inventory
 

@@ -1,6 +1,6 @@
 # Implementation status
 
-Living tracker for product ↔ engineering alignment. Sourced from [Client_notes_3.md](../../Client_notes_3.md) and production verification.
+Living tracker for product ↔ engineering alignment. Sourced from [client-notes-round-3.md](client-notes-round-3.md) and production verification.
 
 **Last reviewed:** May 2026
 
@@ -21,11 +21,11 @@ Living tracker for product ↔ engineering alignment. Sourced from [Client_notes
 
 | Area | Item | Notes |
 | ---- | ---- | ----- |
-| **Rewards** | Full Point Shop catalog (15 items) | Seed has ~2; see [rewards-system-spec](../../docs/rewards-system-spec-and-tasks.md) |
+| **Rewards** | Full Point Shop catalog (15 items) | Seed has ~2; see [rewards-system-spec](../product/rewards-system-spec-and-tasks.md) |
 | **Rewards** | Tier thresholds (Emerald 4k → Platinum 90k) | Align `tiers.ts` with client spec |
 | **Rewards** | Redemption fulfillment at ship/fee/buyback | PP deducts; benefits not always applied |
 | **Binder** | Server-backed binder + quests | P0 partial; P1 backlog |
-| **Marketplace** | CC marketplace rollout | Checklist in [marketplace_rollout_checklist.md](../../marketplace_rollout_checklist.md) |
+| **Marketplace** | CC marketplace rollout | Checklist in [marketplace-rollout-checklist.md](../reference/marketplace-rollout-checklist.md) |
 
 ## Not done / deferred
 
@@ -48,4 +48,4 @@ Living tracker for product ↔ engineering alignment. Sourced from [Client_notes
 
 ## How to update this doc
 
-After each client round, append rows to [Client_notes_3.md](../../Client_notes_3.md) and mirror summary here.
+After each client round, append rows to [client-notes-round-3.md](client-notes-round-3.md) (or a new `client-notes-round-N.md`) and mirror summary here.

@@ -2,15 +2,15 @@
 
 Last updated: May 2026
 
-> **Documentation hub:** Production engineering docs live in **[pocketpull-platform/docs/README.md](pocketpull-platform/docs/README.md)**. This file is the full **UX/product specification**. Sections **29–30** describe the old prototype API and gap list — cross-check [implementation-status.md](pocketpull-platform/docs/changelog/implementation-status.md) and [product-overview.md](pocketpull-platform/docs/product/product-overview.md) before treating gaps as still open.
+> **Documentation hub:** Production engineering docs live in **[docs/README.md](../README.md)**. This file is the full **UX/product specification**. Sections **29–30** describe the old prototype API and gap list — cross-check [implementation-status.md](../changelog/implementation-status.md) and [product-overview.md](../product/product-overview.md) before treating gaps as still open.
 
 | Topic | Where |
 | ----- | ----- |
-| Auth (Google + Privy) | [authentication.md](pocketpull-platform/docs/architecture/authentication.md) |
-| API routes | [backend-api-reference.md](pocketpull-platform/docs/architecture/backend-api-reference.md) |
-| Rewards / PP numbers | [rewards.md](rewards.md) + [rewards-and-gamification.md](pocketpull-platform/docs/product/rewards-and-gamification.md) |
+| Auth (Google + Privy) | [authentication.md](../architecture/authentication.md) |
+| API routes | [backend-api-reference.md](../architecture/backend-api-reference.md) |
+| Rewards / PP numbers | [rewards.md](rewards.md) + [rewards-and-gamification.md](../product/rewards-and-gamification.md) |
 | Badges | [badges.md](badges.md) |
-| Staging | [staging.md](pocketpull-platform/docs/getting-started/staging.md) |
+| Staging | [staging.md](../getting-started/staging.md) |
 
 ## 1. Product Summary
 

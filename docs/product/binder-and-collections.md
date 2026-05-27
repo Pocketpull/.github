@@ -42,7 +42,7 @@ Archive sync: `npm run pokemon:sync` (backend).
 
 ## Engineering plan
 
-**[docs/binder-client-implementation-strategy.md](../../docs/binder-client-implementation-strategy.md)**
+**[binder-implementation-strategy.md](binder-implementation-strategy.md)**
 
 | Phase | Status |
 | ----- | ------ |
@@ -51,7 +51,7 @@ Archive sync: `npm run pokemon:sync` (backend).
 
 ## Implementation status
 
-From [Client_notes_3.md](../../Client_notes_3.md):
+From [client-notes-round-3.md](../changelog/client-notes-round-3.md):
 
 | Item | Status |
 | ---- | ------ |

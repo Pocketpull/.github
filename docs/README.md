@@ -49,8 +49,23 @@ Central index for engineering, product, and operations. These docs describe the 
 
 | Doc | Description |
 | --- | ----------- |
-| [implementation-status.md](changelog/implementation-status.md) | Shipped vs backlog (from client notes) |
-| [source-documents.md](reference/source-documents.md) | Index of every `.md` in the monorepo |
+| [implementation-status.md](changelog/implementation-status.md) | Shipped vs backlog summary |
+| [client-notes-round-3.md](changelog/client-notes-round-3.md) | Full round-3 implementation log |
+| [source-documents.md](reference/source-documents.md) | Complete file catalogue |
+| [Masterdoc.md](reference/Masterdoc.md) | V3 product UX spec |
+| [rewards.md](reference/rewards.md) · [badges.md](reference/badges.md) | PP + badge numbers |
+
+## Deep-dive specs (moved from repo root)
+
+| Doc | Description |
+| --- | ----------- |
+| [rewards-system-spec-and-tasks.md](product/rewards-system-spec-and-tasks.md) | Rewards engineering gaps + tasks |
+| [binder-implementation-strategy.md](product/binder-implementation-strategy.md) | Binder / quests plan |
+| [onboarding-points-system.md](operations/onboarding-points-system.md) | Onboarding quest reference |
+| [store-benefits-runbook.md](operations/store-benefits-runbook.md) | Point Shop SQL + CC env |
+| [collector-crypt-integration-plan.md](integrations/collector-crypt-integration-plan.md) | CC gacha integration blueprint |
+| [marketplace-api-notes.md](reference/marketplace-api-notes.md) | CC marketplace API notes |
+| [marketplace-rollout-checklist.md](reference/marketplace-rollout-checklist.md) | Marketplace rollout checklist |
 
 ## External READMEs
 
