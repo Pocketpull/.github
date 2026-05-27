@@ -2,6 +2,17 @@
 
 Technical overview of the Pocketpull stack for developers, operators, and demo recordings.
 
+## Internal documentation (start here)
+
+**[docs/README.md](docs/README.md)** — full index: architecture, auth, API catalog, product (Masterdoc summary), rewards, CC integrations, ops runbooks, implementation status.
+
+| Quick links | |
+| --- | --- |
+| [Local development](docs/getting-started/local-development.md) | [Staging](docs/getting-started/staging.md) |
+| [Authentication](docs/architecture/authentication.md) | [Backend API](docs/architecture/backend-api-reference.md) |
+| [Product overview](docs/product/product-overview.md) | [Masterdoc (UX spec)](docs/reference/Masterdoc.md) |
+| [Rewards & PP](docs/product/rewards-and-gamification.md) | [Implementation status](docs/changelog/implementation-status.md) |
+
 > **GitHub org profile:** The org homepage reads from `profile/README.md` in the [**Pocketpull/.github**](https://github.com/Pocketpull/.github) repository (or this repo if you configure it that way). Keep `profile/README.md` in sync when you update the cover page.
 
 ## Demo video
